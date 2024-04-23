@@ -1,0 +1,9 @@
+div#content {
+  display: flex;
+}
+
+.intro-container {
+  max-width: 50%;
+  margin-left: auto;
+  align-self: center;
+}
