@@ -14,8 +14,9 @@ const createHomePage = () => {
   introContainer.appendChild(introHeader);
 
   const description = document.createElement("p");
-  description.textContent =
-    "Welcome traveler! May I offer you a Stardust Spritzer or Quantum Quencher from our menu. Try our Cybernetic Sushi Symphony, from our award winning robo chefs. In our cyberpunk oasis, we blend flavors and styles to create an unforgettable dining experience. Join us and discover the future of culinary artistry";
+  description.classList.add("intro-description");
+  description.innerHTML =
+    "<span>Welcome traveler!</span> May I offer you a Stardust Spritzer or Quantum Quencher from our menu. In our cyberpunk oasis, we blend flavors and styles to create an unforgettable dining experience. Head on over to our menu.";
   introContainer.appendChild(description);
 
   const robotCharacter = document.createElement("img");
