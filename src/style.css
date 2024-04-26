@@ -8,10 +8,14 @@ body {
   margin: 0;
 }
 
+.home-bkgrd {
+  background-image: url("./futuristic-space.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 div#content {
   display: flex;
-  background-position: center;
-  background-size: contain;
   flex-grow: 1;
 }
 

@@ -1,9 +1,8 @@
-import restaurant from "./futuristic-space.jpg";
 import robot from "./robot.png";
 
 const createHomePage = () => {
   const contentDiv = document.querySelector("#content");
-  contentDiv.style.background = `url(${restaurant})`;
+  contentDiv.setAttribute("class", "home-bkgrd");
 
   const introContainer = document.createElement("div");
   introContainer.classList.add("intro-container");
