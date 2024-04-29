@@ -6,6 +6,8 @@ body {
   height: 100vh;
   font-family: "Orbitron", Arial, Helvetica, sans-serif;
   margin: 0;
+  background-position: center;
+  background-size: cover;
 }
 
 nav {

@@ -1,7 +1,11 @@
+import menuDeco from "./deco-bkgd.jpg";
+
 const createMenuPage = () => {
   const contentDiv = document.querySelector("#content");
   contentDiv.setAttribute("class", "menu-bkgrd");
-  
+
+  document.body.style.backgroundImage = `url(${menuDeco})`;
+
   const menuContainer = createMenuContainer();
 
   const menuTitle = createMenuTitle();

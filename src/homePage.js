@@ -1,8 +1,11 @@
 import robot from "./robot.png";
+import space from "./city-bkgd.jpg";
 
 const createHomePage = () => {
   const contentDiv = document.querySelector("#content");
   contentDiv.setAttribute("class", "home-bkgrd");
+
+  document.body.style.backgroundImage = `url(${space})`;
 
   const introContainer = document.createElement("div");
   introContainer.classList.add("intro-container");

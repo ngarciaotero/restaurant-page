@@ -1,8 +1,11 @@
 import chef from "./robot-chef.png";
+import cityscape from "./futuristic-space.jpg";
 
 const createAboutPage = () => {
   const contentDiv = document.querySelector("#content");
   contentDiv.setAttribute("class", "about-bkgrd");
+
+  document.body.style.backgroundImage = `url(${cityscape})`;
 
   const aboutContainer = document.createElement("div");
   aboutContainer.classList.add("about-container");
