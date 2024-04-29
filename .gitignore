@@ -1,7 +1,5 @@
 # node_modules dir
 node_modules/
-# webpack build output directory
-dist/
 # macOS metadata
 .DS_Store
 
