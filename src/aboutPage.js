@@ -23,10 +23,31 @@ const createAboutPage = () => {
   aboutContainer.appendChild(aboutText1);
   aboutContainer.appendChild(aboutText2);
 
+  const bottomContainer = document.createElement("div");
+  bottomContainer.classList.add("img-address-container");
+
   const robotChef = document.createElement("img");
   robotChef.src = chef;
   robotChef.classList.add("robot-chef");
-  aboutContainer.appendChild(robotChef);
+  bottomContainer.appendChild(robotChef);
+
+  const address = document.createElement("div");
+  const restaurantName = document.createElement("p");
+  restaurantName.textContent = "NeonNexus Bistro";
+  const street = document.createElement("p");
+  street.textContent = " 789 Nebula Boulevard";
+  const stateCity = document.createElement("p");
+  stateCity.textContent = "Stellar City, Alpha Centauri 12345";
+  const division = document.createElement("p");
+  division.textContent = "Galactic Sector 7G-42";
+  address.appendChild(restaurantName);
+  address.appendChild(street);
+  address.appendChild(stateCity);
+  address.appendChild(division);
+
+  bottomContainer.appendChild(address);
+
+  aboutContainer.appendChild(bottomContainer);
 
   contentDiv.appendChild(aboutContainer);
 };
